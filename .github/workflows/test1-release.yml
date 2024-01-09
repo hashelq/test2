@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron:  '0 10 * * *'
+permissions:
+  contents: write
 jobs:
   get-version:
     runs-on: ubuntu-latest
